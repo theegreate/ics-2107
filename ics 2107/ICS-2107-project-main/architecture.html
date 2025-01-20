@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Architecture</title>
+    <link rel="stylesheet" href="css/sub.css">
+</head>
+
+<body>
+    <header>
+        <div class="heading">
+            Web Architecture
+        </div>
+        <div class="exit">
+            <a href="index.html">
+                <img src="images/remove.png" alt="Exit Button">
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="cap" id="1">
+            <p class="cap-title">Chapter 1: What it means</p>
+            <div class="cap-text">
+                <p>
+                    Web architecture is the conceptual structure of the World Wide Web. The WWW or internet is a constantly changing medium that enables communication between different users and the technical interaction (interoperability) between different systems and subsystems. The basis for this is different components and data formats, which are usually arranged in tiers and build on each other. Overall, they form the infrastructure of the internet, which is made possible by the three core components of data transmission protocols (TCP/IP, HTTP, HTTPS), representation formats (HTML, CSS, XML), and addressing standards (URI, URL). The term web architecture should be distinguished from the terms website architecture and information architecture.<br>
+                    <br>
+                    
+                    <br>
+                </p>
+                <h3>Types of Web Architecture</h3>
+                <p>
+                    The internet is a medium that is constantly changing and expanded by numerous developers, programmers and various consortia such as the W3C. However, the architectures used can be schematically distinguished.
+                </p>
+                <h3>Client-server Architecture</h3>
+                <p>
+                    Initially, the web consisted of a two-tiered architecture: clients and servers. Clients and servers shared the tasks and services that the system was supposed to perform. For example, the client may request a service from the server; the server answers the request by providing the service. Retrieving a website using a URL address that directs to a server to load the site in the client’s browser is an example of the two-layer model, also known as the client-server model.
+                    <br>
+                    The internet protocol family, which now consists of around 500 different network protocols, is usually used as the basis for the WWW, but it usually comprises the TCP/TCP/IP reference model. Three prerequisites must exist in the web architecture for the distributed application systems to communicate with one another:
+
+<li>Representation formats with a fixed standard: The most frequently used formats are HTML and CSS; or XML when machines communicate with one another.</li>
+<li>Protocols for data transfer: HTTP (Hypertext Transfer Protocol) or HTTPS (Hypertext Transfer Protocol Secure) is used in the web. Other applications, such as mail servers, use SMTP (Simple Mail Transfer Protocol) or POP (Post Office Protocol). Determining the protocols used depends on the application.</li><br>
+    <li>The standard for addressing: This refers to the URL (Uniform Resource Locator) which is an instance of the more general concept of URI.</li>
+        Finally, the web architecture is analogous to the operational structure of application systems for data storage, data transmission, and presentation. When transferred to the web, the web architecture typically consists of database servers that manage the data and resources. They communicate with a client using a transfer protocol that can retrieve the data and view it in a browser. The representation is usually done with HTML and CSS.
+                </p>
+                <h3>Middleware:</h3>
+                <p>
+                    Tools like load balancers and API gateways that facilitate communication between the frontend and backend.
+                </p>
+                <p>
+                    A robust system architecture is essential for understanding more complex concepts such as centralised and distributed processing, which form the foundation of modern web interactions.
+                </p>
+            </div>
+        </div>
+        <div class="cap" id="2">
+            <p class="cap-title">Chapter 2: Centralised & Distributed Processing</p>
+            <div class="cap-text">
+                <p>
+                    Centralised and distributed processing are two paradigms that define how a system handles computations and resources. 
+                    Both play crucial roles in shaping the functionality and scalability of web systems.
+                </p>
+                <h2>Centralised Processing</h2>
+                <p>
+                    In a centralised model, a single central unit, such as a server or mainframe, handles all computational tasks. 
+                    This model simplifies management but comes with significant limitations.
+                </p>
+                <h3>Advantages</h3>
+                <p>
+                    - Easier to manage and maintain as all operations occur in one location.
+                    <br>
+                    - Stronger data consistency since there's only one source of truth.
+                </p>
+                <h3>Disadvantages</h3>
+                <p>
+                    - Limited scalability due to reliance on a single processing unit.
+                    <br>
+                    - Vulnerability to single points of failure.
+                    <br>
+                    - Performance bottlenecks under heavy loads.
+                </p>
+                <h2>Distributed Processing</h2>
+                <p>
+                    Distributed processing divides computational tasks across multiple systems, often connected through a network. 
+                    This approach underpins modern web systems due to its scalability and resilience.
+                </p>
+                <h3>Advantages</h3>
+                <p>
+                    - Supports larger user bases by scaling horizontally.
+                    <br>
+                    - Ensures higher availability through redundancy and fault tolerance.
+                    <br>
+                    - Enables faster response times by distributing resources closer to users.
+                </p>
+                <h3>Disadvantages</h3>
+                <p>
+                    - More complex to synchronize and maintain consistency.
+                    <br>
+                    - Requires sophisticated tools to manage communication between systems.
+                </p>
+                <p>
+                    These paradigms set the stage for the client-server model, where distributed processing forms the backbone of system interactions.
+                </p>
+            </div>
+        </div>
+        <div class="cap" id="3">
+            <p class="cap-title">Chapter 3: The Client-Server Model</p>
+            <div class="cap-text">
+                <p>
+                    The client-server model is a distributed system design where clients (end-user devices) communicate with servers (backend systems) to access data and services. 
+                    It is the core framework upon which web applications operate.    
+                </p>
+                <h3>Components</h3>
+                <h4>Client:</h4>
+                <p>
+                    A device or application that initiates requests, such as a browser or a mobile app.
+                </p>
+                <h4>Server:</h4>
+                <p>
+                    A system that processes client requests, retrieves the necessary data, and sends it back to the client.
+                </p>
+                <h3>Workflow</h3>
+                <p>
+                    - A client submits a request (e.g., accessing a webpage).
+                    <br>
+                    - The server processes the request, possibly interacting with databases or other services.
+                    <br>
+                    - The server sends a response (e.g., an HTML page or JSON data).
+                </p>
+                <h3>Advantages</h3>
+                <ul>
+                    <h4>Decoupled Design</h4>
+                    <p>
+                        The server sends a response (e.g., an HTML page or JSON data).
+                    </p>
+                    <h4>Scalability</h4>
+                    <p>
+                        Easily supports increased traffic by adding servers or balancing the load.
+                    </p>
+                    <h4>Flexibility</h4>
+                    <p>
+                        Supports a wide range of clients, from web browsers to IoT devices.
+                    </p>
+                </ul>
+                <p>
+                    By leveraging distributed processing, the client-server model can be optimized further through techniques like replication and specialisation, ensuring better performance and reliability.
+                </p>
+            </div>
+        </div>
+        <div class="cap" id="4">
+            <p class="cap-title">Chapter 4: Replication & Specialisation</p>
+            <div class="cap-text">
+                <p>
+                    Replication and specialisation enhance the client-server model by addressing scalability, performance, and fault tolerance. 
+                    These strategies are critical for modern web systems handling massive traffic and complex workloads.
+                </p>
+                <h2>Replication</h2>
+                <p>
+                    Replication involves creating multiple copies of data or services to ensure availability and distribute workload.
+                </p>
+                <h3>Data Replication</h3>
+                <ul>
+                    <p>
+                        - Stores identical datasets across multiple servers to improve read performance and reliability.
+                        <br>
+                        - Enables quicker data access for geographically distributed users.
+                    </p>
+                </ul>
+                <h3>Service Replication</h3>
+                <ul>
+                    <p>
+                        - Duplicates servers or applications to handle more requests and reduce latency.
+                        <br>
+                        - Enhances fault tolerance by redirecting requests to operational replicas during failures.
+                    </p>
+                </ul>
+                <h2>Specialisation</h2>
+                <p>
+                    Specialisation assigns specific tasks to dedicated components or systems for optimal performance.
+                </p>
+                <h3>Dedicated Servers</h3>
+                <ul>
+                    <p>
+                        - Allocates individual servers for specific functions, like database management or caching.
+                        <br>
+                        - Reduces resource contention and improves efficiency.
+                    </p>
+                </ul>
+                <h3>Microservices</h3>
+                <ul>
+                    <p>
+                        - Breaks applications into smaller, independent services, each focusing on a specific business function.
+                        <br>
+                        - Simplifies maintenance and scaling of individual components.
+                    </p>
+                </ul>
+                <p>
+                    Replication and specialisation lay the foundation for tiered web architectures, which structure web systems into layers for improved organization and performance.
+                </p>
+            </div>
+        </div>
+        <div class="cap" id="5">
+            <p class="cap-title">Chapter 5: Tiered Web Architectures</p>
+            <div class="cap-text">
+                <p>
+                    Tiered architectures divide a web system into distinct layers or tiers, each responsible for specific functionalities. 
+                    This modular design enhances maintainability, scalability, and fault isolation.
+                </p>
+                <h2>Common Tiers</h2>
+                <ul>
+                    <h3>Presentation Tier:</h3>
+                    <ul>
+                        <p>
+                            - The user interface layer interacting directly with end-users.
+                            <br>
+                            - Handles input collection and data display.
+                        </p>
+                    </ul>
+                    <h3>Application Tier:</h3>
+                    <ul>
+                        <p>
+                            - The business logic layer where computations and decision-making occur.
+                            <br>
+                            - Processes client requests and manages interactions with the data tier.
+                        </p>
+                    </ul>
+                    <h3>Data Tier:</h3>
+                    <ul>
+                        <p>
+                            - The storage layer responsible for managing data retrieval, storage, and security.
+                        </p>
+                    </ul>
+                </ul>
+                <h2>Benefits</h2>
+                <ul>
+                    <h3>Independent Scaling:</h3>
+                    <p>
+                        Each tier can be scaled based on specific demands, optimizing resource usage.
+                    </p>
+                    <h3>Fault Tolerance</h3>
+                    <p>
+                        Issues in one tier are isolated, preventing cascading failures.
+                    </p>
+                    <h3>Flexibility</h3>
+                    <p>
+                        Allows independent updates or replacements for tiers without disrupting the entire system.
+                    </p>
+                </ul>
+                <p>
+                    Tiered architectures are especially crucial in enabling advanced platforms like portal services, which aggregate various functionalities for seamless user experiences.
+                </p>
+            </div>
+        </div>
+        <div class="cap" id="6">
+            <p class="cap-title">Chapter 6: Portal Services</p>
+            <div class="cap-text">
+                <p>
+                    Portal services are platforms that integrate multiple services and content into a unified interface, providing users with centralized access to diverse functionalities. They are a prime example of tiered architectures in action.
+                </p>
+                <h2>Key Features</h2>
+                <ul>
+                    <h3>Aggregation</h3>
+                    <p>
+                        - Combines diverse services like emails, calendars, and news feeds into one interface.
+                        <br>
+                        - Enhances productivity by reducing the need for multiple applications.
+                    </p>
+                    <h3>Personalisation</h3>
+                    <p>
+                        - Customizes content and services based on user roles, preferences, or behavior.
+                        <br>
+                        - Increases user satisfaction through tailored experiences.
+                    </p>
+                    <h3>Integration</h3>
+                    <p>
+                        - Connects with external systems using APIs and protocols like OAuth for seamless data sharing.
+                        <br>
+                        - Ensures interoperability across different platforms.
+                    </p>
+                </ul>
+                <h2>Examples</h2>
+                <ul>
+                    <h3>Enterprise Portals:</h3>
+                    <p>
+                        Intranets like Microsoft SharePoint facilitate employee collaboration.
+                    </p>
+                    <h3>Consumer Portals:</h3>
+                    <p>
+                        Public-facing platforms like Google Workspace offer integrated tools for everyday tasks.
+                    </p>
+                </ul>
+                <p>
+                    Portal services showcase the culmination of replication, specialisation, and tiered architectures, delivering scalable, efficient, and user-centric platforms.
+                </p>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>

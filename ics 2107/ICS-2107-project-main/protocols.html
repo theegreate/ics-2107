@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet Protocols</title>
+    <link rel="stylesheet" href="css/sub.css">
+</head>
+
+<body>
+    <h1>Internet Protocols</h1>
+   <p><b>Internet protocols</p></b> are a set of rules that allow computers and other devices to communicate over the Internet. These protocols ensure that data is sent, received, and understood correctly between different systems. There are many types of internet protocols, each serving a specific purpose, such as transferring files, sending emails, or securing data. Understanding these protocols is important for making the internet work efficiently and securely. In this article we will see different types of internet protocol in detail.</p>
+<br>
+<h2>What is IP Addressing?</h2>
+<p>An <b>IP address</b> represents an Internet Protocol address. A unique address that identifies the device over the network. It is almost like a set of rules governing the structure of data sent over the Internet or through a local network. An IP address helps the Internet to distinguish between different routers, computers, and websites. It serves as a specific machine identifier in a specific network and helps to improve visual communication between source and destination.</p>
+<br>
+<h3>Working of Internet Protocol</h3>
+<p>Step by step working of internet protocol:
+    <ul>
+        <li><b>Dividing Data into Packets</b>: When you send information over the internet, IP split it into small parts called packets. Each packet contains a piece of the data and the address of where it needs to go.</li>
+        <li><b>Addressing</b>: Every device connected to the internet has its own IP address. This address helps identify where the data is being sent from and where it should be delivered.</li>
+        <li><b>Routing the Packets</b>: As the packets travel across the internet, they pass through several devices called routers. These routers help direct the packets toward the correct destination, like how mail is sorted at different post offices.</li>
+        <li><b>Reassemble the Data</b>: Once all the packets arrive at the destination, they are put back together to recreate the original message or file.</li>
+        <li><b>Handling Missing Packets</b>: If some packets don’t arrive, the system can request that they be sent again, making sure the complete data is received.</li>
+    </ul>
+
+</p>
+<h4>Types of Internet Protocols</h4>
+    <h1><b>1. TCP/IP(Transmission Control Protocol/ Internet Protocol)</b></h1>
+    <p>In TCP/IP, the IP protocol ensures that each computer that is connected to the Internet is having a specific serial number called the IP address. TCP specifies how data is exchanged over the internet and how it should be broken into IP packets. It also makes sure that the packets have information about the source of the message data, the destination of the message data, the sequence in which the message data should be re-assembled, and checks if the message has been sent correctly to the specific destination. The TCP is also known as a connection-oriented protocol.</p>
+    <img src="images/TCP.gif" alt="TCP/IP" style="width:500px;height:450px;" >
+
+    <h2><b>2. SMTP(Simple Mail Transfer Protocol)</b></h2>
+    <p>SMTP protocol is important for sending and distributing outgoing emails. This protocol uses the header of the mail to get the email id of the receiver and enters the mail into the queue of outgoing mail. And as soon as it delivers the mail to the receiving email id, it removes the email from the outgoing list. The message or the electronic mail may consider the text, video, image, etc. It helps in setting up some communication server rules.</p>
+    <img src="images/TCP.gif" alt="TCP/IP" style="width:500px;height:450px;" >
+
+    <h3><b>3. FTP (File Transfer Protocol)</b></h3>
+    <p>This protocol is used for transferring files from one system to the other. This works on a client-server model. When a machine requests for file transfer from another machine, the FTO sets up a connection between the two and authenticates each other using their ID and Password. And, the desired file transfer takes place between the machines.</p>
+    <img src="images/TCP.gif" alt="TCP/IP" style="width:500px;height:450px;" >
+
+    <h4><b>4. PPP(Point-to-Point Protocol)</b></h4>
+    <p>PPP is a communication protocol that is used to create a direct connection between two communicating devices. This protocol defines the rules using which two devices will authenticate with each other and exchange information with each other. For example, A user connects his PC to the server of an Internet Service Provider and also uses PPP. Similarly, for connecting two routers for direct communication it uses PPP.</p>
+    
+    <h5>5. SFTP(Secure File Transfer Protocol) </h5>
+    <p>SFTP which is also known as SSH FTP refers to File Transfer Protocol (FTP) over Secure Shell (SSH) as it encrypts both commands and data while in transmission. SFTP acts as an extension to SSH and encrypts files and data then sends them over a secure shell data stream. This protocol is used to remotely connect to other systems while executing commands from the command line.</p>
+
+    <h6><b>6. HTTP(Hyper Text Transfer Protocol)</b></h6>
+    <p>HTTP protocol is used to transfer hypertexts over the internet and it is defined by the www(world wide web) for information transfer. This protocol defines how the information needs to be formatted and transmitted. And, it also defines the various actions the web browsers should take in response to the calls made to access a particular web page. Whenever a user opens their web browser, the user will indirectly use HTTP as this is the protocol that is being used to share text, images, and other multimedia files on the World Wide Web. </p>
+    <img src="images/TCP.gif" alt="TCP/IP" style="width:500px;height:450px;" >
+</body>
+
+</html>
+<!-- <header>
+        <div class="heading">
+            Internet Protocols
+        </div>
+        <div class="exit">
+            <a href="index.html">
+                <img src="images/remove.png" alt="Exit Button">
+            </a>
+        </div>
+    </header>-->

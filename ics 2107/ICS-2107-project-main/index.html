@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Internet Technologies</title>
+    <link rel="stylesheet" href="css/sub.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--<header>
+        <h1>Welcome to Internet Technologies Hub</h1>
+        <p>Your gateway to mastering the digital world</p>
+    </header>-->
+
+    <nav>
+        <ol class="topnav" id="myTopnav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="protocols.html">Internet Protocols</a></li>
+            <li><a href="architecture.html">Web Architecture</a></li>
+        </ol>
+    </nav>
+    
+    
+    
+    <!--<section class="hero">
+        <h1>Master the World of Internet Technologies</h1>
+        <p>Explore resources, tutorials, and tools to take your tech skills to the next level.</p>
+        <button>Start Learning Now</button>
+    </section>-->
+
+        
+    <div class="heroImage">
+        <img src="images/internet-banner.webp" alt="Internet Architecture">
+
+    </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br
+
+    <section class="mySection">
+    <h1 id="myH1">Overview of The Internet</h1>
+    <p>The <b>Internet</b> is a collection of computers that communicate using a standard set of protocols.
+        Since there are now millions of computers involved in the Internet, it has grown to be 
+        a major means of communication
+        and allows for users to interact with little regard to distance or location. 
+        Associated with the Internet is a set
+        of technologies ranging from network protocols to browsers that have been developed to support Internet
+        operations. This Chapter gives a description of the basis of these Internet technologies and how these 
+        can be used by corporations to improve their operations.</p>
+        <iframe width="600" height="345" 
+        src="https://www.youtube.com/embed/Dxcc6ycZ73M?autoplay=1&mute=1"></iframe><br>
+    <p> The structure of the Internet is first described with an overview of network standards and the ISO seven
+        layer network model. TCP/IP is then described together with the use of routers to route the packets and the
+        use of Internet addressing. 
+        This leads to a description of the World Wide Web (WWW) and the use of the
+        Hypertext Transfer Protocol (HTTP).The implementation of Internet technologies is then addressed with a
+        description of the growth in the size and usage of the Internet and the future use of
+        Internet technologies.
+        Corporate use of Internet technologies is then described with a description of Intranets and Extranets and
+        the phases that corporations tend to pass through in implementing Internet technologies. An example
+        corporation, Deere & Co., is then profiled on their usage of Internet technologies and how these
+        technologies are beginning to reach into every facet of company operations.</p></section>
+
+        <section class="mySection">
+        <h2 id="myH2"><b>History of the Internet</b></h2>
+        <p>The history of the Internet originated in the efforts of scientists and engineers to build and 
+            interconnect computer networks. The Internet Protocol Suite, the set of rules used to communicate
+            between networks and devices on the Internet, arose from research and development in the United States
+            and involved international collaboration, particularly with researchers in the United Kingdom and
+            France.<br>
+
+            Computer science was an emerging discipline in the late 1950s that began to consider time-sharing 
+            between computer users, and later, the possibility of achieving this over wide area networks.
+            J. C. R. Licklider developed the idea of a universal network at the Information Processing Techniques
+            Office (IPTO) of the United States Department of Defense (DoD) Advanced Research Projects Agency
+            (ARPA). Independently, Paul Baran at the RAND Corporation proposed a distributed network based 
+            on data in message blocks in the early 1960s, and Donald Davies conceived of packet switching in
+            1965 at the National Physical Laboratory (NPL), proposing a national commercial data network in 
+            the United Kingdom.<br><br>
+            
+            ARPA awarded contracts in 1969 for the development of the ARPANET project, directed by Robert Taylor 
+            and managed by Lawrence Roberts. ARPANET adopted the packet switching technology proposed by Davies 
+            and Baran. The network of Interface Message Processors (IMPs) was built by a team at Bolt, Beranek, 
+            and Newman, with the design and specification led by Bob Kahn. The host-to-host protocol was specified
+            by a group of graduate students at UCLA, led by Steve Crocker, along with Jon Postel and others. 
+            The ARPANET expanded rapidly across the United States with connections to the United Kingdom and Norway.<br><br>
+            <iframe width="600" height="345"
+            src="http://www.youtube.com/embed/M-01ii4zX_k">
+            </iframe><br><br>
+            
+            Several early packet-switched networks emerged in the 1970s which researched and provided data
+            networking. Louis Pouzin and Hubert Zimmermann pioneered a simplified end-to-end approach to 
+            internetworking at the IRIA. Peter Kirstein put internetworking into practice at University
+            College London in 1973. Bob Metcalfe developed the theory behind Ethernet and the PARC Universal 
+            Packet. ARPA initiatives and the International Network Working Group developed and refined ideas 
+            for internetworking, in which multiple separate networks could be joined into a network of networks.
+            Vint Cerf, now at Stanford University, and Bob Kahn, now at DARPA, published their research on
+            internetworking in 1974. Through the Internet Experiment Note series and later RFCs this evolved
+            into the Transmission Control Protocol (TCP) and Internet Protocol (IP), two protocols of the
+            Internet protocol suite. The design included concepts pioneered in the French CYCLADES project
+            directed by Louis Pouzin. The development of packet switching networks was underpinned by
+            mathematical work in the 1970s by Leonard Kleinrock at UCLA.<br><br>
+            
+            In the late 1970s, national and international public data networks emerged based on the X.25 protocol,
+            designed by Rémi Després and others. In the United States, the National Science Foundation (NSF) 
+            funded national supercomputing centers at several universities in the United States, and provided 
+            interconnectivity in 1986 with the NSFNET project, thus creating network access to these supercomputer
+            sites for research and academic organizations in the United States. International connections to 
+            NSFNET, the emergence of architecture such as the Domain Name System, and the adoption of TCP/IP on
+            existing networks in the United States and around the world marked the beginnings of the Internet.
+            Commercial Internet service providers (ISPs) emerged in 1989 in the United States and Australia.
+            Limited private connections to parts of the Internet by officially commercial entities emerged in
+            several American cities by late 1989 and 1990.[8] The optical backbone of the NSFNET was 
+            decommissioned in 1995, removing the last restrictions on the use of the Internet to carry
+            commercial traffic, as traffic transitioned to optical networks managed by Sprint, MCI and
+            AT&T in the United States.<br><br>
+            
+            Research at CERN in Switzerland by the British computer scientist Tim Berners-Lee in 1989–90 resulted
+            in the World Wide Web, linking hypertext documents into an information system, accessible from any 
+            node on the network.[9] The dramatic expansion of the capacity of the Internet, enabled by the advent
+            of wave division multiplexing (WDM) and the rollout of fiber optic cables in the mid-1990s, had a
+            revolutionary impact on culture, commerce, and technology. This made possible the rise of 
+            near-instant communication by electronic mail, instant messaging, voice over Internet Protocol (VoIP)
+            telephone calls, video chat, and the World Wide Web with its discussion forums, blogs, social 
+            networking services, and online shopping sites. Increasing amounts of data are transmitted at 
+            higher and higher speeds over fiber-optic networks operating at 1 Gbit/s, 10 Gbit/s, and 800 Gbit/s 
+            by 2019.[10] The Internet's takeover of the global communication landscape was rapid in historical
+            terms: it only communicated 1% of the information flowing through two-way telecommunications 
+            networks in the year 1993, 51% by 2000, and more than 97% of the telecommunicated information
+            by 2007.[11] The Internet continues to grow, driven by ever greater amounts of online information,
+            commerce, entertainment, and social networking services. However, the future of the global 
+            network may be shaped by regional differences.<br><br></p>
+            </section>
+            
+</body>
+                <!--<div class="card-grid">
+        <div class="card" id="1">
+            <img src="images/history.jpg" alt="Old Computers">
+            <p class="card-text">History of the Internet</p>
+            <a href="history.html">
+                <p class="start">Begin Lesson</p>
+            </a>
+        </div>
+        <div class="card" id="2">
+            <img src="images/protocol.jpg" alt="URL">
+            <p class="card-text">Internet Protocols</p>
+            <a href="protocols.html">
+                <p class="start">Begin Lesson</p>
+            </a>
+        </div>
+        <div class="card" id="3">
+            <img src="images/architecture.png" alt="Devices">
+            <p class="card-text">Web Architecture</p>
+            <a href="architecture.html">
+                <p class="start">Begin Lesson</p>
+            </a>
+        </div>
+        <div class="card" id="4">
+            <img src="images/webdev.jpg" alt="Web Development">
+            <p class="card-text">Introduction to Web Development</p>
+            <a href="development.html">
+                <p class="start">Begin Lesson</p>
+            </a>
+        </div>
+        <div class="card" id="5">
+            <img src="images/html.jpg" alt="HTML Code">
+            <p class="card-text">Introduction to HTML</p>
+            <a href="html_intro.html">
+                <p class="start">Begin Lesson</p>
+            </a>
+        </div>
+        <div class="card" id="6">
+            <img src="images/cssbanner_0.png.webp" alt="CSS Code">
+            <p class="card-text">Introduction to CSS</p>
+            <a href="css_intro.html">
+                <p class="start">Begin Lesson</p>
+            </a>
+        </div>
+        <div class="card" id="7">
+            <img src="images/javascript_example.jpg" alt="JavaScript Code">
+            <p class="card-text">Introduction to JavaScript</p>
+            <a href="js_intro.html">
+                <p class="start">Begin Lesson</p>
+            </a>
+        </div>
+    </div>-->
+</body>
+</html>

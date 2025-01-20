@@ -1,0 +1,169 @@
+html {
+    width: 100vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    text-align:center;
+}
+nav {
+    background-color: black; /* light background for contrast */
+    overflow: hidden; /* Ensure content doesn't spill out */
+}
+
+/* Style for the list inside the nav */
+.topnav {
+    list-style-type: none; /* Remove default list bullets */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+    display: flex; /* Align items horizontally */
+    justify-content:left; /* Center the items */
+}
+
+/* Styling for the list items */
+.topnav li {
+    display: inline; /* Inline layout for horizontal alignment */
+    margin: 0 10px; /* Spacing between items */
+}
+
+/* Styling for the links */
+.topnav a {
+    text-decoration: none; /* Remove underline */
+    color: orange; /* White text for contrast */
+    padding: 14px 20px; /* Add padding for clickable area */
+    display: inline-block; /* Block-level for padding effect */
+    font-size: 18px; /* Increase font size */
+}
+
+/* Hover effect */
+.topnav a:hover {
+    background-color: #575757; /* Slightly lighter background on hover */
+    color: white; /* Gold text on hover */
+    border-radius: 5px; /* Rounded corners */
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    padding: 8px;
+    background-color: black;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    color: black;
+    line-height: 1.6;
+    text-align: center;
+}
+/*header {
+    background-color: #333333;
+    width: 100%;
+    height: 10vh;
+    margin: -8px 0 0 -8px;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}*/
+
+
+.heading {
+    color: #FFFFFF;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-left: 20px;
+    padding-top: 3vh;
+}
+
+.exit img{
+    width: 30px;
+    position: relative;
+    top: -3.6vh;
+    left: 95%;
+    transition: 0.2s ease;
+}
+
+main {
+    position: relative;
+    top: 2vh;
+}
+
+.cap {
+    border: solid 2px #D42C26;
+    border-radius: 5px;
+    padding: 2vh;
+    margin: 2em;
+    transition: .5s ease;
+}
+.cap:hover {
+    background-color: #1f1e1e;
+    padding: 3vh;
+    transition: .5s ease;
+}
+
+.cap-title {
+    color: #D42C26;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.cap-text {
+    display: none;
+    transition: .5 ease;
+}
+.cap:hover .cap-text {
+    display: block;
+    color: #D42C26;
+    font-size: 1em;
+    font-weight: 600;
+    transition: .5 ease;
+
+}
+.cap:hover .cap-text p {
+    display: block;
+    color: #FFFFFF;
+    font-size: 1.05em;
+    font-weight: 500;
+    letter-spacing: 0;
+}
+.heroImage{
+    height: 35vh;
+    object-fit:fill;
+    transition: 0.5s ease;
+    margin-top: 10px;
+    margin:auto;
+    width: 100%
+    display: block;
+    margin-bottom: 10px;
+
+
+}
+.mySection{
+    background-color:white;
+    border-radius: 5px;
+    transition: 0.5s ease;
+    width:80%;
+    margin-left: 130px;
+}
+#myH1, {
+    font-family: "Mulish", serif;
+    font-optical-sizing:auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-size :50px;
+}
+#MYH2{
+    font-family: "Mulish", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;  
+}
